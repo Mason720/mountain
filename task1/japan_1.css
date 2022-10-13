@@ -1,0 +1,26 @@
+body{
+	background-color:rgba(39, 39, 39, 0.68); /* Background color of Body */
+	font-size:1.5px;   
+} 
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.japan{
+  width:300em;
+  height:200em;
+  position:relative;
+  background-color:#ffffff;
+}
+.japan::after{
+  position:absolute;
+  content:"";
+  width:120em;
+  height:120em;
+  border-radius:50%;
+  background-color:#ff0000;
+  top:40em;
+  left:90em;
+}

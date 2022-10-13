@@ -1,0 +1,42 @@
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background: #2696ac;
+}
+
+body div {
+  margin: 0 auto;
+}
+
+.japan-flag {
+  height: 333.33333px;
+  width: 500px;
+  background: #ffffff;
+}
+
+.japan-flag::after {
+  content: "";
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: #ff0000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  margin-left: -100px;
+}
+/*# sourceMappingURL=japan.css.map */

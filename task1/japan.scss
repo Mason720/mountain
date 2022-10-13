@@ -1,0 +1,45 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin hinomaru($width) {
+  
+    $height: ($width / 3) * 2; //寬高比為 3:2
+    $circle-diam: $height * .6; // 高與紅色圓形直徑比為 10:6  
+    $circle-border: $circle-diam / 2;
+    
+    height: $height;
+    width: $width;
+    background: #ffffff;
+    
+    &::after {
+      content: "";
+      display: block;
+      height: $circle-diam;
+      width: $circle-diam;
+      border-radius: $circle-border;
+      background: #ff0000;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      margin-left: -$circle-border;
+    }    
+  }
+   
+  body {
+    background: rgb(38, 150, 172);
+     div {
+      margin: 0 auto;
+    }
+  }
+  
+  
+  .japan-flag {
+    @include hinomaru(500px);
+  }
+
+  
